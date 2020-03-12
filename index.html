@@ -40,6 +40,25 @@
             margin: 0;
             padding: 0;
         }
+
+
+        .youtube-responsive-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .youtube-responsive-container iframe,
+        .youtube-responsive-container object,
+        .youtube-responsive-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+        }
     </style>
 </head>
 
@@ -249,10 +268,15 @@
                 </div>
             </div>
 
-            <div id="player" class="col-md-8 mb-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aHGRzyQSYRs" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div id="player" class="col-md-8 ">
+
+
+                <div id="player" class="col youtube-responsive-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aHGRzyQSYRs" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
             </div>
 
 
